@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import Header from './Header'
 import Home from './Home'
+import Locale from './Locale'
+import Motion from './Motion'
 import Orientation from './Orientation'
 import Resize from './Resize'
 
@@ -15,6 +17,8 @@ class App extends Component {
             <Header />
             <Switch>
               <Route exact component={Home} path="/" />
+              <Route exact component={Locale} path="/locale" />
+              <Route exact component={Motion} path="/motion" />
               <Route exact component={Orientation} path="/orientation"/>
               <Route exact component={Resize} path="/resize" />
             </Switch>
