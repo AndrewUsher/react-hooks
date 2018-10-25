@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import Header from './Header'
 import Home from './Home'
+import Orientation from './Orientation'
 import Resize from './Resize'
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
             <Header />
             <Switch>
               <Route exact component={Home} path="/" />
+              <Route exact component={Orientation} path="/orientation"/>
               <Route exact component={Resize} path="/resize" />
             </Switch>
           </div>
