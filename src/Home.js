@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 const Styled = {
   Section: styled.section`
-    padding-top: 20px;
     text-align: center;
 
     a {
@@ -20,10 +19,12 @@ const Styled = {
 const Home = () => (
   <Styled.Section>
     <Link to="/resize">Resize</Link>
+    <Link to="/mousemove">MouseMove</Link>
     <Link to="/locale">Locale</Link>
     <Link to="/motion">Motion</Link>
     <Link to="/orientation">Orientation</Link>
     <Link to="/geolocation-static">Geolocation (static)</Link>
+    <Link to="/geolocation-watch">Geolocation (watch)</Link>
   </Styled.Section>
 )
 
