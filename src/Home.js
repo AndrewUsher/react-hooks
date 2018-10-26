@@ -20,6 +20,7 @@ const Styled = {
 const Home = () => (
   <Styled.Section>
     <Link to="/resize">Resize</Link>
+    <Link to="/mousemove">MouseMove</Link>
     <Link to="/locale">Locale</Link>
     <Link to="/motion">Motion</Link>
     <Link to="/orientation">Orientation</Link>

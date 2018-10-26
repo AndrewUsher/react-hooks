@@ -7,6 +7,7 @@ import Locale from './Locale'
 import Motion from './Motion'
 import Orientation from './Orientation'
 import Resize from './Resize'
+import MouseMove from './MouseMove';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
             <Switch>
               <Route exact component={Home} path="/" />
               <Route exact component={Locale} path="/locale" />
+              <Route exact component={MouseMove} path="/mousemove"/>
               <Route exact component={Motion} path="/motion" />
               <Route exact component={Orientation} path="/orientation"/>
               <Route exact component={Resize} path="/resize" />
