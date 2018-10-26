@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { ThemeProvider, createGlobalStyle } from 'styled-components'
+import GeolocationWatch from './GeolocationWatch'
 import Header from './Header'
 import Home from './Home'
 import Locale from './Locale'
@@ -53,6 +54,7 @@ class App extends Component {
             <GlobalStyle />
             <Header />
             <Switch>
+            <Route exact component={GeolocationWatch} path="/geolocation-watch" />
               <Route exact component={Home} path="/" />
               <Route exact component={Locale} path="/locale" />
               <Route exact component={MouseMove} path="/mousemove" />

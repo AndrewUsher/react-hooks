@@ -23,6 +23,7 @@ const Home = () => (
     <Link to="/locale">Locale</Link>
     <Link to="/motion">Motion</Link>
     <Link to="/orientation">Orientation</Link>
+    <Link to="/geolocation-watch">Geolocation (watch)</Link>
   </Styled.Section>
 )
 
