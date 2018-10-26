@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 const Styled = {
   Section: styled.section`
-    padding-top: 20px;
     text-align: center;
 
     a {
