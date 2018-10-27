@@ -1,5 +1,5 @@
 import React from 'react'
-import useGeolocationWatch from './withGeolocationWatch'
+import useGeolocationWatch from './useGeolocationWatch'
 
 const GeolocationWatch = () => {
   const { geolocation, error, loading } = useGeolocationWatch()

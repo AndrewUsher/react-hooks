@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const withDeviceOrientation = () => {
+const useDeviceOrientation = () => {
   const [orientation, setOrientation] = useState({
     absolute: 0,
     alpha: 0,
@@ -29,4 +29,4 @@ const withDeviceOrientation = () => {
   return orientation
 }
 
-export default withDeviceOrientation
+export default useDeviceOrientation

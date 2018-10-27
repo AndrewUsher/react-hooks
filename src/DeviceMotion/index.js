@@ -1,5 +1,5 @@
 import React from 'react'
-import useDeviceMotion from './withDeviceMotion'
+import useDeviceMotion from './useDeviceMotion'
 
 const Motion = () => {
   const { acceleration } = useDeviceMotion()

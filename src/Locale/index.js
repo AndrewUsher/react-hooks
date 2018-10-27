@@ -1,5 +1,5 @@
 import React from 'react'
-import useLocale from './withLocale'
+import useLocale from './useLocale'
 
 const Locale = () => {
   const { primary, others } = useLocale()

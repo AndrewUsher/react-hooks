@@ -1,5 +1,5 @@
 import React from 'react'
-import useWindowResize from './withWindowResize';
+import useWindowResize from './useWindowResize';
 
 const Resize = () => {
   const size = useWindowResize()

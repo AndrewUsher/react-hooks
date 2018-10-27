@@ -1,5 +1,5 @@
 import React from 'react'
-import useGeolocationStatic from './withGeolocationStatic'
+import useGeolocationStatic from './useGeolocationStatic'
 
 const GeolocationStatic = () => {
   const { coordinates, error, loading } = useGeolocationStatic();
