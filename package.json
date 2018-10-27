@@ -16,7 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "prettier --write",
-    "precommit": "yarn lint"
+    "precommit": "lint-staged"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,6 +28,14 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "husky": "^1.1.2",
+    "lint-staged": "^7.3.0",
     "prettier": "^1.14.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn lint",
+      "git add"
+    ]
   }
 }
