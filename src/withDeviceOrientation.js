@@ -23,7 +23,7 @@ const withDeviceOrientation = () => {
       return () =>
         window.removeEventListener('deviceorientation', handleOrientationChange)
     },
-    [window]
+    []
   )
 
   return orientation
