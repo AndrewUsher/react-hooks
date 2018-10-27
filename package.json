@@ -15,8 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "prettier --write",
-    "precommit": "lint-staged"
+    "lint": "prettier --write"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,5 +36,10 @@
       "yarn lint",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
