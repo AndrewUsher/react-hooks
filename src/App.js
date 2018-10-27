@@ -11,6 +11,7 @@ import Motion from './DeviceMotion'
 import Orientation from './DeviceOrientation'
 import Resize from './WindowResize'
 import MouseMove from './MouseMove'
+import PreviousState from './PreviousState'
 
 const App = () => (
   <BrowserRouter>
@@ -20,6 +21,7 @@ const App = () => (
         <Header />
         <Switch>
           <Route exact component={GeolocationWatch} path="/geolocation-watch" />
+          <Route exact component={PreviousState} path="/previous-state" />
           <Route exact component={Home} path="/" />
           <Route exact component={GeolocationStatic} path="/geolocation-static" />
           <Route exact component={Locale} path="/locale" />

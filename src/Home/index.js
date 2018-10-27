@@ -19,6 +19,7 @@ const Styled = {
 const Home = () => (
   <Styled.Section>
     <Link to="/resize">Resize</Link>
+    <Link to="/previous-state">Counter with Previous State</Link>
     <Link to="/mousemove">MouseMove</Link>
     <Link to="/locale">Locale</Link>
     <Link to="/motion">Motion</Link>
