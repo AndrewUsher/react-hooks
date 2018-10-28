@@ -31,6 +31,11 @@ const GlobalStyle = createGlobalStyle`
       text-align: left;
     }
   }
+
+  pre {
+    white-space: pre-wrap;
+    text-align: left;
+  }
 `
 
 export default GlobalStyle
