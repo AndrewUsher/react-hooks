@@ -42,6 +42,7 @@ function reducer(state, action) {
 
 const Rect = styled.div`
   background-color: ${props => props.color}
+  display: inline-block;
   height: ${props => props.height}
   width: ${props => props.width}
 
