@@ -3,7 +3,6 @@ import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './GlobalStyle'
 import Header from './Header'
-
 import Routes from './Routes'
 
 const App = () => (
