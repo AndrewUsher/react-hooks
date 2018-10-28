@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Styled = {
@@ -15,6 +15,7 @@ const Styled = {
 
     a {
       text-decoration: none;
+      color: #fefefe;
 
       &:hover {
         text-decoration: underline;
@@ -23,7 +24,10 @@ const Styled = {
   `
 }
 
-const Header = (props) => <Styled.Header {...props}><Link to="/">React Hooks</Link></Styled.Header>
-
+const Header = props => (
+  <Styled.Header {...props}>
+    <Link to="/">React Hooks</Link>
+  </Styled.Header>
+)
 
 export default Header

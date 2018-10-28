@@ -1,5 +1,5 @@
 import React from 'react'
-import useDeviceOrientation from './withDeviceOrientation'
+import useDeviceOrientation from './useDeviceOrientation'
 
 const Orientation = () => {
   const orientation = useDeviceOrientation()

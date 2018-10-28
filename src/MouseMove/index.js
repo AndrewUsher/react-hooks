@@ -1,5 +1,5 @@
 import React from 'react'
-import useMouseMove from './withMouseMove'
+import useMouseMove from './useMouseMove'
 
 const MouseMove = () => {
   const {x: mouseX, y: mouseY} = useMouseMove()
