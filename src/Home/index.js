@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -18,6 +18,12 @@ const Styled = {
 }
 const Home = () => (
   <Styled.Section>
+    <Links />
+  </Styled.Section>
+)
+
+const Links = () => (
+  <Fragment>
     <Link to="/resize">Resize</Link>
     <Link to="/previous-state">Counter with Previous State</Link>
     <Link to="/fetch">Fetch</Link>
@@ -27,7 +33,7 @@ const Home = () => (
     <Link to="/orientation">Orientation</Link>
     <Link to="/geolocation-static">Geolocation (static)</Link>
     <Link to="/geolocation-watch">Geolocation (watch)</Link>
-  </Styled.Section>
+  </Fragment>
 )
 
 export default Home
