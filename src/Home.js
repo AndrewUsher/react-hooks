@@ -13,6 +13,10 @@ const Styled = {
       font-family: ${props => props.theme.primaryFont};
       margin-bottom: 5px;
       text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   `
 }
@@ -25,7 +29,8 @@ const Home = () => (
     <Link to="/orientation">Orientation</Link>
     <Link to="/geolocation-static">Geolocation (static)</Link>
     <Link to="/geolocation-watch">Geolocation (watch)</Link>
-  </Styled.Section>
+    <Link to="/usereducer-simple">useReducer Example (simple)</Link>
+   </Styled.Section>
 )
 
 export default Home

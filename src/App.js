@@ -7,9 +7,10 @@ import Header from './Header'
 import Home from './Home'
 import Locale from './Locale'
 import Motion from './Motion'
+import MouseMove from './MouseMove'
 import Orientation from './Orientation'
 import Resize from './Resize'
-import MouseMove from './MouseMove'
+import UseReducerExampleSimple from './UseReducerExampleSimple'
 
 const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
@@ -63,6 +64,7 @@ class App extends Component {
               <Route exact component={Motion} path="/motion" />
               <Route exact component={Orientation} path="/orientation" />
               <Route exact component={Resize} path="/resize" />
+              <Route exact component={UseReducerExampleSimple} path="/usereducer-simple" />
             </Switch>
           </Fragment>
         </ThemeProvider>
