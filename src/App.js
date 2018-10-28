@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './GlobalStyle'
 import Header from './Header'
