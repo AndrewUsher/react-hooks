@@ -7,10 +7,10 @@ const Orientation = () => {
     <section>
       <h2>Orientation</h2>
       <ul>
-        <li>Absolute: {orientation.absolute.toString()}</li>
-        <li>Alpha: {orientation.alpha}</li>
-        <li>Beta: {orientation.beta}</li>
-        <li>Gamma: {orientation.gamma}</li>
+        <li>Absolute: {typeof orientation.absolute !== 'undefined' && orientation.absolute.toString()}</li>
+        <li>Alpha: {orientation.alpha.toFixed(2)}</li>
+        <li>Beta: {orientation.beta.toFixed(2)}</li>
+        <li>Gamma: {orientation.gamma.toFixed(2)}</li>
       </ul>
     </section>
   )

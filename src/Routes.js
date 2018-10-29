@@ -10,7 +10,8 @@ import Resize from './WindowResize'
 import MouseMove from './MouseMove'
 import PreviousState from './PreviousState'
 import Fetch from './Fetch'
-import UseReducerSimple from './UseReducerSimple';
+import UseReducerSimple from './UseReducerSimple'
+import NetworkStatus from './NetworkStatus'
 
 const Routes = () => (
   <Switch>
@@ -25,6 +26,7 @@ const Routes = () => (
     <Route exact component={PreviousState} path="/previous-state" />
     <Route exact component={Resize} path="/resize" />
     <Route exact component={UseReducerSimple} path="/usereducer-simple" />
+    <Route exact component={NetworkStatus} path="/network-status" />
   </Switch>
 )
 

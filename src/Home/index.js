@@ -38,6 +38,7 @@ const Links = () => (
     <Link to="/geolocation-static">Geolocation (static)</Link>
     <Link to="/geolocation-watch">Geolocation (watch)</Link>
     <Link to="/usereducer-simple">useReducer Example (simple)</Link>
+    <Link to="/network-status">Network Status</Link>
   </Fragment>
 )
 
