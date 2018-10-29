@@ -11,8 +11,8 @@ const Locale = () => {
       </h4>
       <h4>Any more?</h4>
       <ul>
-        {others.map(single => (
-          <li>{single}</li>
+        {others.map((single, i) => (
+          <li key={i}>{single}</li>
         ))}
       </ul>
     </section>
