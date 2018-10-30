@@ -1,7 +1,7 @@
-import React, { useMemo } from 'react'
+import React, { useMemo, useState } from 'react'
 
 // contrived example..
-function computeExpensiveValue(a = 0, b = 1000) {
+function computeExpensiveValue(a, b) {
   const t0 = performance.now()
   console.log("now: ", t0)
 
@@ -17,22 +17,27 @@ function computeExpensiveValue(a = 0, b = 1000) {
   return [total, timeDiff]
 }
 
-const a = 0
-const b = 100000
+// const a = 0
+// const b = 100000
 
 const UseMemoExample = () => {
+  const [high, setHigh] = useState(100000);
+
+  console.log("maybe");
   const [memoizedValue, timeDiff] = useMemo(
-    () => computeExpensiveValue(a, b),
-    [a, b]
+    () => computeExpensiveValue(0, high),
+    [high]
   );
   console.log("memoizedValue: ", memoizedValue);
-  console.log("timeDiff: ", timeDiff);
+  console.log("timeDiff: ", high);
   return (
     <section>
       <h2>useMemo Example</h2>
+      <button onChange={() => setHigh(high * 10)}>Count Up To The Moon</button>
+
       <button>Rerun calculation</button>
       <p>Result: {memoizedValue} </p>
-      <p>Time taken: {timeDiff && timeDiff / 1000} sec</p>
+      <p>Time taken: {timeDiff && timeDiff.toFixed(4)} ms</p>
     </section>
   )
 }
