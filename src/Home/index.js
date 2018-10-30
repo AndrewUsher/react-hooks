@@ -13,6 +13,10 @@ const Styled = {
       font-family: ${props => props.theme.primaryFont};
       margin-bottom: 5px;
       text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   `
 }
@@ -33,7 +37,8 @@ const Links = () => (
     <Link to="/orientation">Orientation</Link>
     <Link to="/geolocation-static">Geolocation (static)</Link>
     <Link to="/geolocation-watch">Geolocation (watch)</Link>
-    <Link to="/memoize">useMemo Example</Link>
+    <Link to="/usereducer-simple">useReducer Example (simple)</Link>
+    <Link to="/network-status">Network Status</Link>
   </Fragment>
 )
 
