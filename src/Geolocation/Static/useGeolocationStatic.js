@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const useGeolocation = () => {
+const useGeolocation = (options = {}) => {
   const [ geolocation, setGeolocation ] = useState({
     coordinates: {
       lat: null,
@@ -28,17 +28,11 @@ const useGeolocation = () => {
     loading: false,
   })
 
-  useEffect(() => {
-    var options = {
-      enableHighAccuracy: true,
-      timeout: 5000,
-      maximumAge: 0
-    }    
+  useEffect(() => {  
     navigator.geolocation.getCurrentPosition(
-      position =>
-        handleLocationSuccess(position),
-        handleLocationFailure,
-        options
+      handleLocationSuccess,
+      handleLocationFailure,
+      options
     )
   }, [])
 
