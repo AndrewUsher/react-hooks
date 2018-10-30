@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const useGeolocationWatch = () => {
+const useGeolocationWatch = (options = {}) => {
   const [ geolocation, setGeolocation ] = useState({
     lat: null,
     lng: null
@@ -25,18 +25,11 @@ const useGeolocationWatch = () => {
     setLoading(false)
   }
 
-  useEffect(() => {
-    const options = {
-      enableHighAccuracy: false,
-      maximumAge: 0,
-      timeout: 5000
-    };    
-
+  useEffect(() => { 
     const geoTrackerId = navigator.geolocation.watchPosition(
-      position =>
-        handleLocationSuccess(position),
-        handleLocationFailure,
-        options
+      handleLocationSuccess,
+      handleLocationFailure,
+      options
     )
     return () => navigator.geolocation.clearWatch(geoTrackerId)
   }, [])

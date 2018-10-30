@@ -1,7 +1,13 @@
 import { useState, useEffect } from 'react'
 
 const useDeviceMotion = () => {
-  const [motion, setMotion] = useState({ acceleration: 0 })
+  const [motion, setMotion] = useState({
+    acceleration: {
+      x: 0,
+      y: 0,
+      z: 0
+    }
+  })
 
   const handleMotionChange = e => setMotion({ acceleration: e.acceleration })
 

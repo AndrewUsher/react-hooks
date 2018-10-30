@@ -2,7 +2,11 @@ import React from 'react'
 import useGeolocationWatch from './useGeolocationWatch'
 
 const GeolocationWatch = () => {
-  const { geolocation, error, loading } = useGeolocationWatch()
+  const { geolocation, error, loading } = useGeolocationWatch({
+    enableHighAccuracy: false,
+    maximumAge: 1,
+    timeout: 5000
+  })
   if (loading) {
     return <p>loading...</p>
   }

@@ -2,7 +2,11 @@ import React from 'react'
 import useGeolocationStatic from './useGeolocationStatic'
 
 const GeolocationStatic = () => {
-  const { coordinates, error, loading } = useGeolocationStatic();
+  const { coordinates, error, loading } = useGeolocationStatic({
+    enableHighAccuracy: true,
+    maximumAge: 0,
+    timeout: 5000
+  })
   if (loading) {
     return <p>loading...</p>
   }
