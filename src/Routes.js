@@ -12,6 +12,7 @@ import PreviousState from './PreviousState'
 import Fetch from './Fetch'
 import UseReducerSimple from './UseReducerSimple'
 import NetworkStatus from './NetworkStatus'
+import UseContext from './UseContext'
 
 const Routes = () => (
   <Switch>
@@ -26,6 +27,7 @@ const Routes = () => (
     <Route exact component={PreviousState} path="/previous-state" />
     <Route exact component={Resize} path="/resize" />
     <Route exact component={UseReducerSimple} path="/usereducer-simple" />
+    <Route exact component={UseContext} path="/usecontext" />
     <Route exact component={NetworkStatus} path="/network-status" />
   </Switch>
 )
