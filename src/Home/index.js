@@ -39,6 +39,7 @@ const Links = () => (
     <Link to="/geolocation-watch">Geolocation (watch)</Link>
     <Link to="/usereducer-simple">useReducer Example (simple)</Link>
     <Link to="/network-status">Network Status</Link>
+    <Link to="/usecontext">useContext Example</Link>
   </Fragment>
 )
 
