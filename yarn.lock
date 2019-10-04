@@ -8153,15 +8153,14 @@ react-scripts@2.0.5:
   optionalDependencies:
     fsevents "1.2.4"
 
-react@^16.7.0-alpha.0:
-  version "16.7.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.7.0-alpha.0.tgz#e2ed4abe6f268c9b092a1d1e572953684d1783a9"
-  integrity sha512-V0za4H01aoAF0SdzahHepvfvzTQ1xxkgMX4z8uKzn+wzZAlVk0IVpleqyxZWluqmdftNedj6fIIZRO/rVYVFvQ==
+react@^16.10.2:
+  version "16.10.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.10.2.tgz#a5ede5cdd5c536f745173c8da47bda64797a4cf0"
+  integrity sha512-MFVIq0DpIhrHFyqLU0S3+4dIcBhhOvBE8bJ/5kHPVOVaGdo0KuiQzpcjCPsf585WvhypqtrMILyoE2th6dT+Lw==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.11.0-alpha.0"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
